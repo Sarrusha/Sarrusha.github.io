@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .social-buttons a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: #f1f1f1;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+        .main-text {
+            margin: 20px 0;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+        .action-buttons a, .action-buttons button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="path-to-your-profile-image.jpg" alt="Profile Image" class="profile-image">
+
+    <div class="social-buttons">
+        <a href="https://linkedin.com/in/giorgiafrassetto" target="_blank">LinkedIn</a>
+        <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+        <a href="https://discord.com/invite/your-profile" target="_blank">Discord</a>
+    </div>
+
+    <div class="main-text">
+        <p>Your main text goes here...</p>
+    </div>
+
+    <img src="path-to-your-main-image.jpg" alt="Main Image" class="main-image">
+
+    <div class="action-buttons">
+        <a href="path-to-your-resume.pdf" download>Download Resume</a>
+        <button onclick="window.location.href='mailto:your-email@example.com';">Email Me</button>
+    </div>
+
+</body>
+</html>
