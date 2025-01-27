@@ -43,16 +43,19 @@ body {
 }
 
 .btn {
-    background: rgba(173, 216, 230, 0.3); /* Frosted blue */
-    backdrop-filter: blur(10px);
-    color: white;
-    padding: 12px 30px; /* Increased padding for wider buttons */
-    border-radius: 10px; /* Rounded corners */
-    border: none; /* Removed white border */
-    display: inline-block; /* Ensures buttons stay on one line */
-    margin: 5px; /* Added spacing between buttons */
-    text-decoration: none; /* Removed underline from links */
-    cursor: pointer; /* Added cursor pointer */
+    /* ... (Existing btn styles) */
+    display: inline-flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+    padding: 8px 16px; /* Adjust padding as needed */
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+}
+
+.btn img {
+    max-width: 100%; /* Ensure icon doesn't exceed button size */
+    max-height: 100%;
+    display: block; /* Prevent default image spacing */
 }
 
 .btn:hover {
