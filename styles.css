@@ -1,87 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    height: 100vh;
-}
-
-.container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-h1 {
-    margin: 10px 0;
-    font-size: 24px;
-    color: #333;
-}
-
-.social-buttons a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    background-color: #f1f1f1;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-}
-
-.social-buttons a.linkedin {
-    background-color: #0077b5;
-    color: #ffffff;
-}
-
-.social-buttons a.github {
-    background-color: #333;
-    color: #ffffff;
-}
-
-.social-buttons a.discord {
-    background-color: #7289da;
-    color: #ffffff;
-}
-
-.main-text {
-    margin: 20px 0;
-    font-size: 16px;
-    color: #666;
-}
-
-.main-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-.action-buttons a, .action-buttons button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.action-buttons a:hover, .action-buttons button:hover {
-    background-color: #0056b3;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <button class="btn">Button 1</button>
+    <button class="btn">Button 2</button>
+    <button class="btn">Button 3</button>
+    <div class="card">
+      <p>This is a card with frosted glass effect.</p>
+    </div>
+  </div>
+</body>
+</html>
