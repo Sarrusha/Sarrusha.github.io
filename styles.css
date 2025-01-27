@@ -9,7 +9,8 @@ html {
 }
 body {
     /* ... (Existing body styles) */
-    background: linear-gradient(to bottom right, #2980b9, #8e44ad); /* Example gradient */
+    background: url('Background.jpg') no-repeat center center fixed; /* Use Background.jpg as the background */
+    background-size: cover; /* Ensure the image covers the entire background */
     display: flex; /* Needed for centering */
     justify-content: center;
     align-items: center;
@@ -66,7 +67,6 @@ body {
     /* ... (Existing main-title styles) */
     margin-top: 0; /*remove top margin*/
 }
-
 
 .button-container {
     /* ... (Existing button-container styles) */
