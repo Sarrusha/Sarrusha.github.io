@@ -37,17 +37,20 @@ body {
 }
 
 .btn {
-    background: rgba(173, 216, 230, 0.3);
+    background: rgba(173, 216, 230, 0.3); /* Frosted blue */
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
     color: white;
-    padding: 10px 20px; /*added padding to the button*/
-    border-radius: 5px; /*added border radius to the button*/
-    cursor: pointer; /*added cursor pointer*/
+    padding: 12px 30px; /* Increased padding for wider buttons */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Removed white border */
+    display: inline-block; /* Ensures buttons stay on one line */
+    margin: 5px; /* Added spacing between buttons */
+    text-decoration: none; /* Removed underline from links */
+    cursor: pointer; /* Added cursor pointer */
 }
 
 .btn:hover {
-    background: rgba(173, 216, 230, 0.5);
+    background: rgba(173, 216, 230, 0.5); /* Frosted blue hover */
 }
 
 .main-title {
