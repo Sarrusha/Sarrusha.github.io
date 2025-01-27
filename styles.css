@@ -8,24 +8,30 @@ html {
     box-sizing: inherit;
 }
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    /* ... (Existing body styles) */
+    background: linear-gradient(to bottom right, #2980b9, #8e44ad); /* Example gradient */
+    display: flex; /* Needed for centering */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #2980b9, #8e44ad);
-    font-family: Verdana, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    color: white;
+}
+
+.blurred-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Add some padding */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 800px; /* Set a maximum width */
+    margin: 20px; /* Add margin */
+    text-align: center; /* Center content within */
 }
 
 .container {
-    text-align: center;
-    max-width: 800px;
+    /* Remove text-align: center from here, it's now in blurred-container */
+    max-width: 100%; /* Take full width of parent */
     margin: 20px auto;
-    padding: 20px;
+    padding: 0; /* Remove padding */
 }
 
 .profile-image {
@@ -54,22 +60,16 @@ body {
 }
 
 .main-title {
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px #000000;
+    /* ... (Existing main-title styles) */
+    margin-top: 0; /*remove top margin*/
 }
 
+
 .button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    /* ... (Existing button-container styles) */
+    margin-top: 20px; /* Add space above buttons */
 }
 .card {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-    padding: 20px;
-    margin: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
+    margin: 20px auto; /* Center the card */
+    max-width: 600px; /* Limit card width */
 }
