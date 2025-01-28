@@ -22,7 +22,7 @@ body {
     border-radius: 15px; /* Rounded corners */
     padding: 30px; /* Add some padding */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    max-width: 800px; /* Set a maximum width */
+    max-width: 1000px; /* Set a maximum width */
     margin: 20px; /* Add margin */
     text-align: center; /* Center content within */
 }
@@ -68,7 +68,6 @@ body {
 }
 
 .button-container {
-    /* ... (Existing button-container styles) */
     margin-top: 20px; /* Add space above buttons */
 }
 .card {
