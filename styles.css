@@ -14,9 +14,19 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, serif;; /* Set font to Roboto */
 }
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
 
+.roboto-<uniquifier> {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 .blurred-container {
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     backdrop-filter: blur(10px);
@@ -69,14 +79,14 @@ body {
 }
 
 .main-title {
-    font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+    font-family: Roboto, serif;; /* Set font to Roboto */
     font-size: 72px; /* Increased font size to 72 */
     margin-top: 0; /* Remove top margin */
     margin-bottom: 30px; /* Added space below the title */
 }
 
 .second-text {
-    font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+    font-family: Roboto, serif;; /* Set font to Roboto */
     font-size: 36px; /* Increased font size to 36 */
     line-height: 1.6; /* Added line height for better readability */
     margin-bottom: 30px; /* Added space below the text */
