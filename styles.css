@@ -21,21 +21,22 @@ body {
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     backdrop-filter: blur(10px);
     border-radius: 15px; /* Rounded corners */
-    padding: 30px;
+    padding: 40px; /* Increased padding for more space inside */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    max-width: 1500px; /* Max width */
+    max-width: 1800px; /* Increased max-width for a wider container */
+    width: 90%; /* Use 90% of the available width */
     margin: 20px;
     text-align: center;
 }
 
 .container {
-    /* Remove text-align: center from here, it's now in blurred-container */
     max-width: 100%; /* Take full width of parent */
     margin: 20px auto;
     padding: 0; /* Remove padding */
 }
+
 .Languages-image {
-    margin: 20px 0; /* Add some spacing above and below the image */
+    margin: 30px 0; /* Increased spacing above and below the image */
     text-align: center; /* Center the image */
 }
 
@@ -69,20 +70,25 @@ body {
 
 .main-title {
     font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
-    font-size: 60px; /* Set font size to 48 */
+    font-size: 72px; /* Increased font size to 72 */
     margin-top: 0; /* Remove top margin */
+    margin-bottom: 30px; /* Added space below the title */
 }
 
 .second-text {
     font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
-    font-size: 48px; /* Set font size to 30 */
+    font-size: 36px; /* Increased font size to 36 */
+    line-height: 1.6; /* Added line height for better readability */
+    margin-bottom: 30px; /* Added space below the text */
 }
 
 .button-container {
-    margin-top: 20px; /* Add space above buttons */
+    margin-top: 30px; /* Increased space above buttons */
 }
 
 .card {
     margin: 20px auto; /* Center the card */
-    max-width: 600px; /* Limit card width */
+    max-width: 800px; /* Increased max-width for a wider card */
+    font-size: 24px; /* Increased font size for card text */
+    line-height: 1.6; /* Added line height for better readability */
 }
