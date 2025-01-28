@@ -37,7 +37,7 @@ body {
     padding: 0; /* Remove padding */
 }
 
-/* Responsive Grid for Languages */
+/* Responsive Grid */
 .languages-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* 7 columns by default */
