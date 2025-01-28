@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif; /* Set default font to Helvetica */
 }
 
 .blurred-container {
@@ -50,6 +51,7 @@ body {
     width: 100px; /* Set a fixed width */
     height: 100px; /* Set a fixed height */
     border-radius: 50%;
+    transition: background 0.3s ease, border-radius 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .btn img {
@@ -60,16 +62,24 @@ body {
 
 .btn:hover {
     background: rgba(173, 216, 230, 0.5); /* Frosted blue hover */
+    border-radius: 25px; /* Rounded borders on hover */
 }
 
 .main-title {
-    /* ... (Existing main-title styles) */
-    margin-top: 0; /*remove top margin*/
+    font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+    font-size: 48px; /* Set font size to 48 */
+    margin-top: 0; /* Remove top margin */
+}
+
+.second-text {
+    font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+    font-size: 30px; /* Set font size to 30 */
 }
 
 .button-container {
     margin-top: 20px; /* Add space above buttons */
 }
+
 .card {
     margin: 20px auto; /* Center the card */
     max-width: 600px; /* Limit card width */
