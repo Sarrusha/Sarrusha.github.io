@@ -105,7 +105,7 @@ body {
 }
 
 .second-text {
-    font-size: 42px; /* Increased font size to 36 */
+    font-size: 36px; /* Increased font size to 36 */
     line-height: 1.6; /* Added line height for better readability */
     margin-bottom: 30px; /* Added space below the text */
 }
@@ -117,7 +117,7 @@ body {
 .card {
     margin: 20px auto; /* Center the card */
     max-width: 1100px; /* Further increase max-width for a wider card */
-    font-size: 36px; /* Increased font size for card text */
+    font-size: 32px; /* Increased font size for card text */
     line-height: 1.6; /* Added line height for better readability */
     word-wrap: break-word; /* Allow long words to break and wrap */
 }
