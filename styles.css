@@ -9,23 +9,23 @@ html {
 }
 body {
     background: url('Wallpaper-Violet-moutains.jpg') no-repeat center center fixed;
-    background-size: cover; /* Ensure the image covers the entire background */
+    background-size: cover; /* Image covers the entire background */
     display: flex; /* Needed for centering */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Helvetica, Arial, sans-serif; /* Set default font to Helvetica */
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .blurred-container {
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blur effect */
+    backdrop-filter: blur(10px);
     border-radius: 15px; /* Rounded corners */
-    padding: 30px; /* Add some padding */
+    padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    max-width: 1000px; /* Set a maximum width */
-    margin: 20px; /* Add margin */
-    text-align: center; /* Center content within */
+    max-width: 1000px; /* Max width */
+    margin: 20px;
+    text-align: center;
 }
 
 .container {
@@ -34,22 +34,24 @@ body {
     margin: 20px auto;
     padding: 0; /* Remove padding */
 }
+.Languages-image {
+    margin: 20px 0; /* Add some spacing above and below the image */
+    text-align: center; /* Center the image */
+}
 
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+.Languages-image img {
+    max-width: 100%; /* So the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .btn {
     display: inline-flex; /* Use flexbox for centering */
     align-items: center; /* Vertically center the icon */
     justify-content: center; /* Horizontally center the icon */
-    padding: 8px 16px; /* Adjust padding as needed */
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
+    padding: 8px 16px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     transition: background 0.3s ease, border-radius 0.3s ease; /* Smooth transition for hover effects */
 }
