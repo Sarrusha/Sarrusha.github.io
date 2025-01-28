@@ -8,8 +8,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    /* ... (Existing body styles) */
-    background: url('Background.jpg') no-repeat center center fixed; /* Use Background.jpg as the background */
+    background: url('Wallpaper-Violet-moutains.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensure the image covers the entire background */
     display: flex; /* Needed for centering */
     justify-content: center;
@@ -44,7 +43,6 @@ body {
 }
 
 .btn {
-    /* ... (Existing btn styles) */
     display: inline-flex; /* Use flexbox for centering */
     align-items: center; /* Vertically center the icon */
     justify-content: center; /* Horizontally center the icon */
