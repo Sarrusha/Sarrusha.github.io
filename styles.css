@@ -4,9 +4,11 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     background: url('Wallpaper-Violet-moutains.jpg') no-repeat center center fixed;
     background-size: cover; /* Image covers the entire background */
@@ -14,19 +16,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Roboto, serif; /* Set font to Roboto */
+    font-family: 'Roboto', serif; /* Set font to Roboto with fallback */
 }
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
 
-.roboto-<uniquifier> {
-  font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
 .blurred-container {
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     backdrop-filter: blur(10px);
@@ -64,7 +56,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    transition: background 0.3s ease, border-radius 0.3s ease; /* Smooth transition for hover effects */
+    transition: background 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .btn img {
@@ -75,18 +67,16 @@ body {
 
 .btn:hover {
     background: rgba(173, 216, 230, 0.5); /* Frosted blue hover */
-    border-radius: 25px; /* Rounded borders on hover */
+    border-radius: 50%; /* Keep border-radius consistent */
 }
 
 .main-title {
-    font-family: Roboto, serif; /* Set font to Roboto */
     font-size: 72px; /* Increased font size to 72 */
     margin-top: 0; /* Remove top margin */
     margin-bottom: 30px; /* Added space below the title */
 }
 
 .second-text {
-    font-family: Roboto, serif; /* Set font to Roboto */
     font-size: 36px; /* Increased font size to 36 */
     line-height: 1.6; /* Added line height for better readability */
     margin-bottom: 30px; /* Added space below the text */
