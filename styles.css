@@ -23,7 +23,7 @@ body {
     border-radius: 15px; /* Rounded corners */
     padding: 40px; /* Increased padding for more space inside */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    max-width: 1500px; /* Increased max-width for a wider container */
+    max-width: 1200px; /* Increased max-width for a wider container */
     width: 90%; /* Use 90% of the available width */
     margin: 20px;
     text-align: center;
@@ -88,7 +88,7 @@ body {
 
 .card {
     margin: 20px auto; /* Center the card */
-    max-width: 1200px; /* Further increase max-width for a wider card */
+    max-width: 1100px; /* Further increase max-width for a wider card */
     font-size: 24px; /* Increased font size for card text */
     line-height: 1.6; /* Added line height for better readability */
     word-wrap: break-word; /* Allow long words to break and wrap */
