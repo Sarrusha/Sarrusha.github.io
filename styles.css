@@ -67,13 +67,13 @@ body {
 
 .main-title {
     font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
-    font-size: 48px; /* Set font size to 48 */
+    font-size: 60px; /* Set font size to 48 */
     margin-top: 0; /* Remove top margin */
 }
 
 .second-text {
     font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
-    font-size: 30px; /* Set font size to 30 */
+    font-size: 48px; /* Set font size to 30 */
 }
 
 .button-container {
