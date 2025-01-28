@@ -37,15 +37,43 @@ body {
     padding: 0; /* Remove padding */
 }
 
-.Languages-image {
-    margin: 30px 0; /* Increased spacing above and below the image */
-    text-align: center; /* Center the image */
+/* Responsive Grid for Languages */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns by default */
+    gap: 15px; /* Space between grid items */
+    margin: 30px 0; /* Increased spacing above and below the grid */
 }
 
-.Languages-image img {
-    max-width: 100%; /* So the image doesn't exceed its container */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 100%; /* Ensure icons don't exceed their container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .languages-grid {
+        grid-template-columns: repeat(5, 1fr); /* 5 columns for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .languages-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .languages-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
 }
 
 .btn {
