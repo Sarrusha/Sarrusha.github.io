@@ -23,7 +23,7 @@ body {
     border-radius: 15px; /* Rounded corners */
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    max-width: 1000px; /* Max width */
+    max-width: 1500px; /* Max width */
     margin: 20px;
     text-align: center;
 }
