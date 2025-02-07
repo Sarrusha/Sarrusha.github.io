@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: url('Wallpaper-Violet-moutains.jpg') no-repeat center center fixed;
+    background: url('assets/Wallpaper-Violet-moutains.jpg') no-repeat center center fixed;
     background-size: cover; /* Image covers the entire background */
     display: flex; /* Needed for centering */
     justify-content: center;
