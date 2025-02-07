@@ -4,7 +4,7 @@ My site is live at https://sarrusha.github.io/
 
 File Structure
 Sarrusha.github.io
-│
+│<br />
 ├── Licence          // I need to write this one day
 ├── README.md        // ---> YOU ARE HERE! <---
 ├── index.html       // Main HTML file
