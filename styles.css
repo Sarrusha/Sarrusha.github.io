@@ -1,63 +1,132 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
+/* Global Resets and Defaults */
+html {
     box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background: url('assets/Wallpaper-Violet-moutains.jpg') no-repeat center center fixed;
+    background-size: cover; /* Image covers the entire background */
+    display: flex; /* Needed for centering */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', serif; /* Set font to Roboto with fallback */
 }
 
+#sakuraCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind all other elements */
+    pointer-events: none; /* Ensure it doesn't interfere with clicks */
+}
 .blurred-container {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-}
-
-.main-title {
-    font-size: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px);
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px; /* Increased padding for more space inside */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 1200px; /* Increased max-width for a wider container */
+    width: 90%; /* Use 90% of the available width */
+    margin: 20px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+.container {
+    max-width: 100%; /* Take full width of parent */
+    margin: 20px auto;
+    padding: 0; /* Remove padding */
 }
 
+/* Responsive Grid */
 .languages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns by default */
+    gap: 15px; /* Space between grid items */
+    margin: 30px 0; /* Increased spacing above and below the grid */
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item img {
-    width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure icons don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .languages-grid {
+        grid-template-columns: repeat(5, 1fr); /* 5 columns for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .languages-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .languages-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px;
-    background: #fff;
+    display: inline-flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+    padding: 8px 16px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: background 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn img {
+    max-width: 100%; /* Ensure icon doesn't exceed button size */
+    max-height: 100%;
+    display: block; /* Prevent default image spacing */
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    background: rgba(173, 216, 230, 0.5); /* Frosted blue hover */
+    border-radius: 50%; /* Keep border-radius consistent */
 }
+
+.main-title {
+    font-size: 72px; /* Increased font size to 72 */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 30px; /* Added space below the title */
+}
+
+.second-text {
+    font-size: 36px; /* Increased font size to 36 */
+    line-height: 1.6; /* Added line height for better readability */
+    margin-bottom: 30px; /* Added space below the text */
+}
+
+.button-container {
+    margin-top: 30px; /* Increased space above buttons */
+}
+
+.card {
+    margin: 20px auto; /* Center the card */
+    max-width: 1100px; /* Further increase max-width for a wider card */
+    font-size: 32px; /* Increased font size for card text */
+    line-height: 1.6; /* Added line height for better readability */
+    word-wrap: break-word; /* Allow long words to break and wrap */
+}"
