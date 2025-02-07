@@ -14,11 +14,7 @@
 <body>
     <!-- Header -->
     <div class="blurred-container">
-        <header>
-            <!-- Reusable header component -->
-            <include src="components/header.html"></include>
-        </header>
-
+        <header id="header"></header>
         <div class="container" role="main">
             <!-- Card Section -->
             <section class="card">
@@ -26,19 +22,33 @@
                 <p>When I’m not coding, you’ll find me writing short stories, exploring the Alps, or crafting new worlds.</p>
                 <p>These are some great tools that I use:</p>
             </section>
-
             <!-- Languages Grid -->
-            <include src="components/languages-grid.html"></include>
-
+            <div id="languages-grid"></div>
             <!-- Button Container -->
-            <include src="components/button-container.html"></include>
+            <div id="button-container"></div>
         </div>
     </div>
-
     <!-- Sakura Animation Canvas -->
     <canvas id="sakuraCanvas"></canvas>
-
-    <!-- Link to the javascript! -->
+    <!-- Link to the JavaScript -->
     <script src="script.js"></script>
+    <!-- Script to Load Components Dynamically -->
+    <script>
+        // Function to fetch and include HTML components
+        async function includeHTML(id, filePath) {
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) throw new Error(`Failed to load ${filePath}`);
+                document.getElementById(id).innerHTML = await response.text();
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        // Load components
+        includeHTML('header', 'components/header.html');
+        includeHTML('languages-grid', 'components/languages-grid.html');
+        includeHTML('button-container', 'components/button-container.html');
+    </script>
 </body>
 </html>
