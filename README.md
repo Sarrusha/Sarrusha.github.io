@@ -2,10 +2,10 @@ Repository for my personale webpage / portfolio.
 
 My site is live at https://sarrusha.github.io/
 
-File Structure
-Sarrusha.github.io
+File Structure<br />
+Sarrusha.github.io<br />
 │<br />
-├── Licence          // I need to write this one day
+├── Licence          // I need to write this one day<br />
 ├── README.md        // ---> YOU ARE HERE! <---
 ├── index.html       // Main HTML file
 ├── styles.css       // Stylesheet
