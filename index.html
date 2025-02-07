@@ -34,7 +34,6 @@
     <script src="script.js"></script>
     <!-- Script to Load Components Dynamically -->
     <script>
-        // Function to fetch and include HTML components
         async function includeHTML(id, filePath) {
             try {
                 const response = await fetch(filePath);
@@ -45,7 +44,6 @@
             }
         }
 
-        // Load components
         includeHTML('header', 'components/header.html');
         includeHTML('languages-grid', 'components/languages-grid.html');
         includeHTML('button-container', 'components/button-container.html');
