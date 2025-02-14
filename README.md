@@ -10,7 +10,7 @@ Sarrusha.github.io<br />
 ├── index.html           // Main HTML file<br />
 ├── styles.css           // Stylesheet<br />
 ├── script.js            // JavaScript logic<br />
-├── assets/              // Folder for wallpapers, favicon, programming alnguages and images in general<br />
+├── assets/              // Folder for wallpapers, favicon, programming languages and images in general<br />
 │   ├── c.png<br />
 │   ├── python.png<br />
 │   └── ... (other images)<br />
